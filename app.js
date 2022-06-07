@@ -43,7 +43,7 @@ async function updateWeather() {
     document.querySelector(".weather").innerHTML = "Temperature: " + temp + "°F";
     setTimeout(updateWeather,100000);
 }
-var max = 3;
+var max = 4;
 var i = 1;
 async function imageRotation() {
     if (i > max) {
