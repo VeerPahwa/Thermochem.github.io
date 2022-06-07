@@ -24,7 +24,7 @@ async function timer() {
     setTimeout(timer,1000);
 }
 async function updateWeather() {
-    var response = await fetch("http://api.weatherapi.com/v1/forecast.json?key=112ede2a91434ab6b02124158220706&q=Wilmington&days=1&aqi=no&alerts=no");
+    var response = await fetch("//api.weatherapi.com/v1/forecast.json?key=112ede2a91434ab6b02124158220706&q=Wilmington&days=1&aqi=no&alerts=no");
     const data = await response.json();
     console.log(data);
     var temp = Math.round(data["current"]["temp_f"]);
