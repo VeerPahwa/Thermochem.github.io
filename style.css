@@ -1,0 +1,172 @@
+@font-face {
+    font-family: font;
+    src: url(Revisal.ttf);
+}
+* {
+    font-family:font;;;
+    overflow:hidden;;;
+}
+body {
+    margin:0;;;
+    padding:0;;;
+}
+/* Header information */
+header {
+    position:static;;;
+    background:#00381E;;;
+    color:white;;;
+    display:inline-flex;;;
+    padding-right:50%;;; 
+    height:25vh;;;  
+}
+header > * {
+    height:auto;;;
+    padding:0;;;
+}
+.logo {
+    margin-left:1.5vw;;;
+    height:22vh;;;
+    width:10vw;;;
+    margin-left:2.5vw;;;
+    margin-right:1.5vw;;;
+    margin-top:1.5vh;;;
+}
+.hub {
+    margin-top:1vh;;;
+    height:7vw;;;
+    width:16.5vw;;;
+    font-size:6.5vw;;;
+    letter-spacing: 0.7vw;;;
+    margin-left:2vw;;;
+}
+.weather {
+    font-size:2.3vw;;;
+    margin-left:4vw;;;
+    margin-top:9vh;;;
+    white-space: nowrap;;;
+    overflow:visible;;;
+    width:20vw;;;
+    height:fit-content;;;
+    text-align:center;;;
+    text-size-adjust: auto;;;
+}
+.date {
+    white-space: nowrap;;;
+    overflow:visible;;;
+    width:fit-content;;;
+    font-size:2.2vw;;;
+    position:absolute;;;
+    top:1.4%;;;
+    left:63%;;;
+}
+.time {
+    white-space: nowrap;;;
+    overflow:visible;;;
+    width:fit-content;;;
+    text-align: right;;;
+    font-size:2.2vw;;;
+    position:absolute;;;
+    top:1.4%;;;
+    left:88.75%;;;
+}
+.blocks {
+    position:absolute;;;
+    left:62.5%;;;
+    top:6.5%;;;
+    width:35.5vw;;;
+}
+.blocknext, .blockcurr {
+    font-size:1.2vw;;;
+    margin-top:2%;;;
+    padding-left:1.5%;;;
+    padding-top:0.5%;;;
+    padding-bottom:0.5%;;;
+    border-radius:10px;;;
+    background:#4a774e;;;
+}
+.bottomtext {
+    background:#4a774e;;;
+    position:absolute;;;
+    padding:1.5vh 0.3vw;;;
+    left:13.5%;;;
+    top:20%;;;
+    width:90%;;;
+    border-top-left-radius: 10vw;
+}
+.item1 {
+    white-space: nowrap;;;
+    overflow:visible;;;
+    width:fit-content;;;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 45s;
+}
+.wasteofspace {
+    transform:translateX(-20%);
+    width:140%;;;
+    background:#4a774e;;;
+    font-size:1.2vh;;;
+    box-shadow: 0 5px 15px rgba(34, 79, 38, 0.8);;;
+}
+/* Main body information */
+main {
+    margin:0;;;
+    width:100vw;;;
+    background:#CDDFD0;;;
+    height:100vh;;;
+}
+.center-left {
+    margin-left:0vw;;;
+    float: left;;;
+    height: 54vh;;;
+    width:40vw;;;
+    margin-top:6vh;;;
+    margin-left:6vh;;;
+}
+.center-left > img {
+    width:600px;;;
+    height:400px;;;
+    display:block;;;
+    border-radius:2vw;;;
+}
+.snowday, .item2 {
+    position:absolute;;;
+    color:white;;;
+    background:#4a774e;;;
+    padding: 2vh 2vw;;;
+    border-radius: 5vh;;;
+    top:90vh;;;
+    text-align:center;;;
+    overflow:hidden;;;
+    white-space: nowrap;;;
+}
+.snowday {
+    left: 3vw;;;
+}
+.item2 {
+    left: 18vw;;;
+    width:20vw;;;
+}
+.right {
+    height:65vh;;;
+    float:left;;;
+    border-radius: 5vh;;;
+    background:#4a774e;;;
+    margin-top:6vh;;;
+    width:52vw;;;
+    margin-left:2vw;;;
+}
+.right > img {
+    width:54vw;;;
+    height:65vh;;;
+}
+@keyframes ticker {
+    0% {
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+    }
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
